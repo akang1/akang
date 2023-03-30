@@ -27,10 +27,8 @@ spec:
                 - arm64
       containers:
       - name: nginx
-        image: ajk814/dignari-test:v1.0.0
+        image: 606280583277.dkr.ecr.us-east-1.amazonaws.com/apis-challenge-server
         ports:
-        - name: http
-          containerPort: 3000
-        imagePullPolicy: IfNotPresent
-      nodeSelector:
-        kubernetes.io/os: linux
+        - containerPort: 3001
+      imagePullSecrets:
+      - name: regcred
