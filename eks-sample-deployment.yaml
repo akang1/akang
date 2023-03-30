@@ -29,6 +29,6 @@ spec:
       - name: nginx
         image: 606280583277.dkr.ecr.us-east-1.amazonaws.com/apis-challenge-server
         ports:
-        - containerPort: 3001
+        - containerPort: 8080
       imagePullSecrets:
       - name: regcred
